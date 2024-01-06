@@ -21,9 +21,11 @@ vim.keymap.set('n', 'hv', '<cmd>lua require("harpoon.ui").toggle_quick_menu()<cr
 vim.keymap.set('n', 'hd', '<cmd>lua require("harpoon.ui").nav_prev()<cr>', { desc = 'Show all marks' })
 vim.keymap.set('n', 'hf', '<cmd>lua require("harpoon.ui").nav_next()<cr>', { desc = 'Show all marks' })
 
--- Workspaces
-vim.keymap.set('n', '<leader>wa', '<cmd>WorkspacesAdd<cr>', { desc = 'Add Workspace' })
-vim.keymap.set('n', '<leader>wr', '<cmd>WorkspacesRemove<cr>', { desc = 'Remove Current Workspace' })
+vim.keymap.set("x", "<leader>p", '"_dP', { desc = "Paste without losing buffer" })
+
+-- -- Workspaces
+-- vim.keymap.set('n', '<leader>wa', '<cmd>WorkspacesAdd<cr>', { desc = 'Add Workspace' })
+-- vim.keymap.set('n', '<leader>wr', '<cmd>WorkspacesRemove<cr>', { desc = 'Remove Current Workspace' })
 
 -- Buffers
 -- vim.keymap.set('n', '<leader>bp', '<cmd>BufferLineTogglePin<cr>', { desc = 'Toggle pin' })
